@@ -21,13 +21,19 @@ export default {
 }
 </script>
 <style  scoped>
+.fa{
+    padding: 5px 0 5px 0;
+}
 .vertical-menu a {
-  color: black; 
-  display: block; 
-  padding: 12px; 
-  
+  color: white; 
+  display: block;  
   text-decoration: none; 
   margin-top:20px;
+  margin-bottom: 35px;
+  height: 100%;
+}
+.vertical-menu a:hover{
+    background-color:#5A5A5B;
 }
 
 </style>

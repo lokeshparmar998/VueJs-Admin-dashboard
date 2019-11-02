@@ -1,15 +1,20 @@
 <template>
     <div>
-        <div class="header-content">
-            <div id="head">
-                <div class="dsp">
-                   <h2>{{name}}</h2>
-                    <p> Account Setting</p>
+        <div class="my-header">
+            <div class="container-flex">
+                <div class="row">
+                    <div class="account col-md-2">
+                        <h4>{{name}}</h4>
+                        <p> Account Setting</p>
                     </div>
-                    <i class="fa fa-user-circle-o fa-3x account" aria-hidden="true"></i>
-                
+                    <div class="account-setting col-md-1">
+                        <i class="fa fa-user-circle-o fa-3x account" aria-hidden="true"></i>
+                    </div>  
+                </div>
             </div>
+           
         </div>
+                  
     </div>
 </template>
 <script>
@@ -22,32 +27,11 @@ export default {
 }
 </script>
 <style scoped>
-
-.header-content {
-    
-    text-align: center;
-    padding: 20px;
-    background: aquamarine;
-    display: flex;
-    justify-content: flex-end;
+.my-header{
+    background-color: #FFFFFF;
 }
-
-#head{
-   display: flex;
-    justify-content: space-around;
-    margin-right: 3%; 
-}
-
-h2{
-     min-width: -webkit-fill-available;
-    
-}
-
-.account{
-        margin-left: 15px;
-}
-
-p{
-    float: right;
-}
+    .row{
+        justify-content: flex-end;
+        align-items: center;
+    }
 </style>

@@ -1,74 +1,72 @@
 <template>
     <div>
-       <div class="myCard">
-            <div class="exp col-md-4">
-                <div class="row">
-                    <div class="col-md-8 sale"> 
-                     <h3>Total sale</h3>
-                        <p >21,340</p>
-                        
-                    </div>
-                    <div class="col-md-4">
-                            <i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i>
-                        </div>
+        <div class="container-flex">
+            <div class="row" style="justify-content: space-around;">
+                <div class="col-md-3 exp">
+                     <div class="container">
+                         <div class="row item">
+                             <div class="col-md-8">
+                                 <h3>Total sale</h3>
+                                    <p >{{totalSale}}</p>
+                             </div>
+                             <div class="col-md-2" style="color:#FF9500">
+                                <i class="fa fa-credit-card-alt fa-2x" aria-hidden="true"></i>
+                             </div>
+                         </div>
+                     </div>
                 </div>
-           
-            
-        </div>
-        <div class="exp col-md-4">
-                <div class="row">
-                    <div class="col-md-8 sale"> 
-                     <h3>Total Income</h3>
-                        <p >21,340</p>
-                        
-                    </div>
-                    <div class="col-md-4">
-                            <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
-                        </div>
+                <div class="col-md-3 exp">
+                     <div class="container">
+                         <div class="row item">
+                             <div class="col-md-8">
+                                 <h3>Total Income</h3>
+                                    <p >{{totalIncome}}</p>
+                             </div>
+                             <div class="col-md-2" style="color:#FB404B">
+                                 <i class="fa fa-tags fa-2x" aria-hidden="true"></i>
+                             </div>
+                         </div>
+                     </div>
                 </div>
-           
-            
-        </div>
-         <div class="exp col-md-4">
-                <div class="row">
-                    <div class="col-md-8 sale"> 
-                     <h3>Total Income</h3>
-                        <p >21,340</p>
-                        
-                    </div>
-                    <div class="col-md-4">
-                            <i class="fa fa-television fa-2x" aria-hidden="true"></i>
-                        </div>
+                <div class="col-md-3 exp">
+                     <div class="container">
+                         <div class="row item">
+                             <div class="col-md-8">
+                                 <h3>Total Views</h3>
+                                    <p >{{totalViews}}</p>
+                             </div>
+                             <div class="col-md-2">
+                                <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
+                             </div>
+                         </div>
+                     </div>
                 </div>
-           
-            
-        </div>
-        </div>  
+            </div>
+        </div>             
     </div>
 </template>
 <script>
 export default {
-    
+    data: function(){
+        return{
+            totalSale: 12991,
+            totalIncome:23523,
+            totalViews:39823
+        }
+    }
 }
 </script>
 <style scoped>
     .exp{
-        
-        margin-left: 40px;
-        height: 100px;
-        width: 30%;
+    
         border: 0.15px solid lightgray;
-        flex-grow: 1;
-        background-color: beige;
-        text-align: center;
-        float:left;
+        background-color: #FFFFFF  
     } 
-
-    .row{
+    .item{
+        text-align: center;
         align-items: center;
     }
-
-    .sale{
-        margin-top: 16px;
+    .spaceme{
+        justify-content: space-between;
     }
 </style>

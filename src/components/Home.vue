@@ -1,33 +1,47 @@
 <template>
     <div id="content">
-      <!-- <div class="content">
-        <div class="header right"><app-header></app-header></div>
-        <div class= "nav left"><app-nav></app-nav></div>
-        <div class="main-content right">
-        <div class="cards  same"><cards></cards></div> 
-        <div class="main  same"><customer-details></customer-details></div>
-        </div> 
-       </div> -->
-       <div class="move-left">
-           <div class="my-nav">
-               <app-nav></app-nav>
-           </div>
-       </div>
-       <div class="move-right">
-           <div class="my-header">
-               <app-header>
-               </app-header>
-           </div>
-           <div class="cards"><cards></cards></div> 
-           <div class="temp"></div>
-           <div class=" charts row">
-               <div class="col-md-1"></div>
-               <div class="col-md-6 a"><graph></graph></div>
-                 <div class="col-md-3 a"><pie></pie></div>
-               
-           </div>
-       </div>
-             
+      <div class="left">
+          <div class="container-flex">
+              <div class="row">
+                  <div class="col-md-12">
+                      <app-nav></app-nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="right">
+          <div class="container-flex app-header">
+              <div class="row">
+                  <div class="col-md-12">
+                      <app-header></app-header>
+                  </div>
+              </div>
+          </div>
+          <div class="container-flex app-cards">
+              <div class="row">
+                  <div class="col-md-12">
+                      <cards></cards>
+                  </div>
+              </div>
+          </div>
+          <div class="container-flex my-charts" style="background-color:#FFFFFF">
+              <div class="row" style="justify-content: space-around; margin-left:70px;">
+                  <div class="col-md-6">
+                      <graph></graph>
+                  </div>
+                  <div class="col-md-4">
+                      <pie></pie>
+                  </div>
+              </div>
+          </div>
+          <div class="container-flex">
+              <div class="class">
+                  <dic class="col-md-6">
+                      <customer-details></customer-details>
+                  </dic>
+              </div>
+          </div>
+      </div>
     </div>
 </template>
 
@@ -50,81 +64,28 @@ export default {
 }
 </script>
 <style scoped>
-#content{
-    width: 80%;
-    margin:auto; 
+    .left{
+        float:left;
+        width: 5%;
+        background-color: black;
+        text-align: center;
+        height:100%;
+        position: fixed;
+        z-index: 1;
     }
-.temp{
-    content: "";
-    clear: both;
-    display: block;
-}
-.move-left{
-    float:left;
-    width: 10%;
-}
-a{
-    
-        background-color: darkkhaki;
-    
-}
-.move-right{
-    float: right;
-    width:97%;
-    height:100%;
-}
-.my-nav{
-    background-color: aquamarine;
-    position: fixed;
-    z-index:1;
-    overflow: hidden;
-    height:100%;
-    z-index: 1;
-    border: 1px solid black;
-}
-.my-header{
-    border:1px solid black;
-    width: 100%;
-}
-.cards{
-    margin:20px;
-}
- /*.left{
-     float: left;
- }
- .nav{
-     width: 10%;
-     overflow: hidden;
-     height:100%;
-     position: fixed;
-     background-color: #eee; 
-     z-index: 1;
-     border: 1px solid black;
- }
- .header{
-     width: 90%;
-     height:80px;
-     border: 1px solid black;
- }
- .right{
-     float:right;
- }
- .cards{
-     width: 90%;
-     margin: 30px 0px 30px 0px;
-     display: flex;
- }
- .main{
-     width: 90%;
-     display: flex;
- }
-.content{
-    width: 80%;
-    margin: auto;
-}
-.main-content{
-    width: 90%;
-    height:100%;
-    background-color: black;
-} */
+    .right{
+        float:right;
+        width: 95%;
+        height:100%;
+        background-color: #F7F7F8;
+    }
+    .app-header{
+        margin-bottom: 50px;
+    }
+    .app-cards{
+        margin-bottom: 50px;
+    }
+    .my-charts{
+        margin-bottom: 50px;
+    }
 </style>
