@@ -73,7 +73,7 @@ pieSeries.radius.value=200;
     border: 0.15px solid lightgray;
     margin-left: 60px;
     position: relative;
-    height: 250px;
+    height: 300px;
     width: 88%
    }
 </style>

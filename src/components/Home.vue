@@ -1,6 +1,6 @@
 <template>
-    <div id="content">
-      <div class="left">
+   <div id="content">
+    <!--  <div class="left">
           <div class="container-flex">
               <div class="row">
                   <div class="col-md-12">
@@ -41,8 +41,32 @@
                   </dic>
               </div>
           </div>
-      </div>
-    </div>
+      </div>-->
+      <div class="container-flex app-cards">
+              <div class="row">
+                  <div class="col-md-12">
+                      <cards></cards>
+                  </div>
+              </div>
+          </div>
+           <div class="container-flex my-charts" style="background-color:#FFFFFF">
+              <div class="row" style="justify-content: space-around; margin-left:70px;">
+                  <div class="col-md-6">
+                      <graph></graph>
+                  </div>
+                  <div class="col-md-4">
+                      <pie></pie>
+                  </div>
+              </div>
+          </div>
+            <div class="container-flex">
+              <div class="class">
+                  <dic class="col-md-6">
+                      <customer-details></customer-details>
+                  </dic>
+              </div>
+          </div>
+    </div> 
 </template>
 
 <script>

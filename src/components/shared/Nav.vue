@@ -3,14 +3,14 @@
         <div class="vertical-menu">
             <router-link to="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></router-link>
             <router-link to="/"><i class="fa fa-home fa-2x" aria-hidden="true"></i></router-link>
-            <router-link to="#"><i class="fa fa-file fa-2x" aria-hidden="true"></i></router-link>
-            <router-link t0="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></router-link>
-            <router-link to="#"><i class="fa fa-area-chart fa-2x" aria-hidden="true"></i></router-link>
-            <router-link to="#"><i class="fa fa-inbox fa-2x" aria-hidden="true"></i></router-link>
-            <router-link to="#"><i class="fa fa-file-video-o fa-2x" aria-hidden="true"></i></router-link>
-            <router-link to="#"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></router-link>
-            <router-link to="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i></router-link>
-            <router-link to="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></router-link>
+            <router-link to="/comingSoon"><i class="fa fa-file fa-2x" aria-hidden="true"></i></router-link>
+            <router-link t0="/comingSoon"><i class="fa fa-search fa-2x" aria-hidden="true"></i></router-link>
+            <router-link to="/comingSoon"><i class="fa fa-area-chart fa-2x" aria-hidden="true"></i></router-link>
+            <router-link to="/comingSoon"><i class="fa fa-inbox fa-2x" aria-hidden="true"></i></router-link>
+            <router-link to="/comingSoon"><i class="fa fa-file-video-o fa-2x" aria-hidden="true"></i></router-link>
+            <router-link to="/comingSoon"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></router-link>
+            <router-link to="/comingSoon"><i class="fa fa-users fa-2x" aria-hidden="true"></i></router-link>
+            <router-link to="/comingSoon"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></router-link>
         </div>
     </div>
 </template>
@@ -34,6 +34,7 @@ export default {
 }
 .vertical-menu a:hover{
     background-color:#5A5A5B;
+    color:#FC6BFA;
 }
 
 </style>
