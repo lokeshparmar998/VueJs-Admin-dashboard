@@ -60,7 +60,7 @@
               </div>
           </div>
             <div class="container-flex">
-              <div class="class">
+              <div class="">
                   <dic class="col-md-6">
                       <customer-details></customer-details>
                   </dic>

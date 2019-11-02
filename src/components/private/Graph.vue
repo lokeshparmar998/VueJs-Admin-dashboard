@@ -1,5 +1,6 @@
 <template>
-    <div class="box">
+    <div class="box" style="">
+        <h3>SALES PERFORMANCE</h3>
         <div class="graph" ref="chartdiv"></div>
        <!-- <div class="container">
             <div class="row">
@@ -62,6 +63,14 @@ export default {
 <style scoped>
 .graph{
     height: 300px;
-    border: 0.15px solid lightgray;
+    
 }
+.box{
+    text-align: center;
+    border: 0.15px solid lightgray;
+    margin-left: 60px;
+    position: relative;
+    height: 300px;
+    width: 88%
+   }
 </style>
